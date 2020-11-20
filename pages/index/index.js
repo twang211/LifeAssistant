@@ -68,11 +68,6 @@ Page({
         img: "../../images/gz.png",
         openpath: "../../pages/game/game",
         text: "摇骰子"
-      },
-      {
-        img: "../../images/bq1.png",
-        openpath: "../../pages/szyx/szyx",
-        text: "数字游戏"
       }
       
     ],
