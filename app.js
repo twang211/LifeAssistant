@@ -1,9 +1,6 @@
-//app.js
-
-const utils = require('./utils/util.js')
-
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
+    
     wx.getStorage({
       key: 'history',
       success: (res) => {
@@ -16,7 +13,9 @@ App({
       }
     })
 
+    console.log('生命周期函数--监听小程序初始化' + JSON.stringify(options))
   },
+  
   // 权限询问
   getRecordAuth: function() {
     wx.getSetting({
@@ -42,12 +41,16 @@ App({
       }
     })
   },
-
+  onShow: function () {
+    console.log('生命周期函数--监听小程序显示')
+  },
   onHide: function () {
     wx.stopBackgroundAudio()
+    console.log('生命周期函数--监听小程序隐藏')
   },
   globalData: {
 
     history: [],
+    hasLogin: false
   }
 })

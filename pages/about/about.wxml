@@ -1,0 +1,34 @@
+<!--pages/about/about.wxml-->
+<view class="abimgbox">
+  <view>
+    <image src="../../images/logo.png" class="logoimg" />
+  </view>
+  <view class="fs30 logntext">
+    乐享生活助手
+  </view>
+  <view class="mybbox">
+    <view class="mybox">
+      <!-- <view class="imgbox">
+        <image src="../../images/my.jpg" class="myimg"/>
+      </view> -->
+      <view class="textbox fs30 fcff">
+        <view>https://www.mrnaas.com</view>
+        <view>技术支持</view>
+      </view>
+    </view>
+  </view>
+  <view class="ybbox">
+    <view class="linbox">
+      <!-- <view class="imgbox">
+        <image src="../../images/y.jpg" class="myimg"/>
+      </view> -->
+      <view class="textbox fs30 fcff">
+        <view>公众号</view>
+        <view>
+          <image src="../../images/gzh.jpg" class="mygzh"/>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
